@@ -1,20 +1,20 @@
 <?php
 
-namespace ViKon\Diff\Entry;
+namespace AyoubBajjou\Diff\Entry;
 
-use ViKon\Diff\Text;
+use AyoubBajjou\Diff\Text;
 
 /**
  * Class UnmodifiedEntry
  *
  * @author  Kovács Vince <vincekovacs@hotmail.com>
  *
- * @package ViKon\Diff\Entry
+ * @package AyoubBajjou\Diff\Entry
  */
 class UnmodifiedEntry extends AbstractEntry {
 
     /**
-     * @param \ViKon\Diff\Text $content
+     * @param \AyoubBajjou\Diff\Text $content
      * @param int              $newPosition
      * @param int              $oldPosition
      */

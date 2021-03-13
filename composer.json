@@ -19,7 +19,7 @@
   },
   "autoload"         : {
     "psr-4": {
-      "ViKon\\Diff\\": "src/ViKon/Diff"
+      "AyoubBajjou\\Diff\\": "src/AyoubBajjou/Diff"
     }
   },
   "minimum-stability": "stable"

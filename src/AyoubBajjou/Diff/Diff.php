@@ -1,10 +1,10 @@
 <?php
 
-namespace ViKon\Diff;
+namespace AyoubBajjou\Diff;
 
-use ViKon\Diff\Entry\DeletedEntry;
-use ViKon\Diff\Entry\InsertedEntry;
-use ViKon\Diff\Entry\UnmodifiedEntry;
+use AyoubBajjou\Diff\Entry\DeletedEntry;
+use AyoubBajjou\Diff\Entry\InsertedEntry;
+use AyoubBajjou\Diff\Entry\UnmodifiedEntry;
 
 class Diff {
 
@@ -20,10 +20,10 @@ class Diff {
     /** @var int */
     private $deleted = 0;
 
-    /** @var \ViKon\Diff\Entry\AbstractEntry[] */
+    /** @var \AyoubBajjou\Diff\Entry\AbstractEntry[] */
     private $diff = [];
 
-    /** @var \ViKon\Diff\Entry\AbstractEntry[][] */
+    /** @var \AyoubBajjou\Diff\Entry\AbstractEntry[][] */
     private $groups = [];
 
     /**
@@ -33,7 +33,7 @@ class Diff {
      * @param string $new     new source text
      * @param array  $options comparison options
      *
-     * @return \ViKon\Diff\Diff
+     * @return \AyoubBajjou\Diff\Diff
      */
     public static function compare($old, $new, array $options = []) {
         return new self($old, $new, $options);
@@ -46,7 +46,7 @@ class Diff {
      * @param string $new     new source containing file path
      * @param array  $options comparison options
      *
-     * @return \ViKon\Diff\Diff
+     * @return \AyoubBajjou\Diff\Diff
      */
     public static function compareFiles($old, $new, array $options = []) {
         return new self(file_get_contents($old), file_get_contents($new), $options);
@@ -87,7 +87,7 @@ class Diff {
     /**
      * Get hunk groups
      *
-     * @return \ViKon\Diff\DiffGroup[]
+     * @return \AyoubBajjou\Diff\DiffGroup[]
      */
     public function getGroups() {
         return $this->groups;
@@ -123,8 +123,8 @@ class Diff {
     }
 
     /**
-     * @param \ViKon\Diff\Text $old
-     * @param \ViKon\Diff\Text $new
+     * @param \AyoubBajjou\Diff\Text $old
+     * @param \AyoubBajjou\Diff\Text $new
      *
      * @return array
      */
@@ -143,8 +143,8 @@ class Diff {
     }
 
     /**
-     * @param \ViKon\Diff\Text $old
-     * @param \ViKon\Diff\Text $new
+     * @param \AyoubBajjou\Diff\Text $old
+     * @param \AyoubBajjou\Diff\Text $new
      * @param                  $diffTable
      *
      * @return array
@@ -179,7 +179,7 @@ class Diff {
      * @param     $diff
      * @param int $offset
      *
-     * @return \ViKon\Diff\DiffGroup[]
+     * @return \AyoubBajjou\Diff\DiffGroup[]
      */
     private function buildGroups($diff, $offset = 2) {
         $groups = [];

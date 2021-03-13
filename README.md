@@ -73,14 +73,14 @@ foreach($groups as $i => $group)
     foreach($group->getEntries() as $entry)
     {
         // Output old position of line
-        echo $entry instanceof \ViKon\Diff\Entry\InsertedEntry 
+        echo $entry instanceof \AyoubBajjou\Diff\Entry\InsertedEntry 
             ? '-'
             : $entry->getOldPosition() + 1;
 
         echo ' | ';
 
         // Output new position of line
-        echo $entry instanceof \ViKon\Diff\Entry\DeletedEntry 
+        echo $entry instanceof \AyoubBajjou\Diff\Entry\DeletedEntry 
             ? '-'
             : $entry->getNewPosition() + 1;
         

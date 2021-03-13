@@ -6,14 +6,14 @@
  * Time: 19:48
  */
 
-namespace ViKon\Diff;
+namespace AyoubBajjou\Diff;
 
 /**
  * Class DiffException
  *
  * @author  Kovács Vince <vincekovacs@hotmail.com>
  *
- * @package ViKon\Diff
+ * @package AyoubBajjou\Diff
  */
 class DiffException extends \Exception {
 }

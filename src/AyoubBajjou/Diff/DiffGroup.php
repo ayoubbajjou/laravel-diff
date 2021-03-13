@@ -6,22 +6,22 @@
  * Time: 0:10
  */
 
-namespace ViKon\Diff;
+namespace AyoubBajjou\Diff;
 
 
 use ArrayAccess;
 use Countable;
-use ViKon\Diff\Entry\AbstractEntry;
+use AyoubBajjou\Diff\Entry\AbstractEntry;
 
 class DiffGroup implements ArrayAccess, Countable {
 
-    /** @var \ViKon\Diff\Entry\AbstractEntry[] */
+    /** @var \AyoubBajjou\Diff\Entry\AbstractEntry[] */
     private $entries = [];
 
     /**
      * Add new entry to group
      *
-     * @param \ViKon\Diff\Entry\AbstractEntry $entry
+     * @param \AyoubBajjou\Diff\Entry\AbstractEntry $entry
      * @param bool                            $prepend prepend or not entry to group
      */
     public function addEntry(AbstractEntry $entry, $prepend = false) {

@@ -1,18 +1,18 @@
 <?php
 
-namespace ViKon\Diff\Entry;
-use ViKon\Diff\Text;
+namespace AyoubBajjou\Diff\Entry;
+use AyoubBajjou\Diff\Text;
 
 /**
  * Class InsertedEntry
  *
  * @author  Kovács Vince <vincekovacs@hotmail.com>
  *
- * @package ViKon\Diff\Entry
+ * @package AyoubBajjou\Diff\Entry
  */
 class InsertedEntry extends AbstractEntry {
     /**
-     * @param \ViKon\Diff\Text $content
+     * @param \AyoubBajjou\Diff\Text $content
      * @param int              $newPosition
      */
     public function __construct(Text $content, $newPosition) {

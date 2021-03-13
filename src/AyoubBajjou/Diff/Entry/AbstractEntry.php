@@ -1,13 +1,13 @@
 <?php
 
-namespace ViKon\Diff\Entry;
+namespace AyoubBajjou\Diff\Entry;
 
 /**
  * Class AbstractEntry
  *
  * @author  Kovács Vince <vincekovacs@hotmail.com>
  *
- * @package ViKon\Diff\Entry
+ * @package AyoubBajjou\Diff\Entry
  */
 abstract class AbstractEntry {
 

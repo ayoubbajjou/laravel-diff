@@ -1,6 +1,6 @@
 <?php
 
-namespace ViKon\Diff;
+namespace AyoubBajjou\Diff;
 
 use ArrayAccess;
 use Countable;
