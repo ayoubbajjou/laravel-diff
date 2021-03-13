@@ -1,0 +1,26 @@
+{
+  "name"             : "vi-kon/laravel-diff",
+  "description"      : "Diff tool for Laravel 5",
+  "keywords"         : [
+    "laravel",
+    "diff",
+    "compare"
+  ],
+  "license"          : "MIT",
+  "homepage"         : "https://github.com/vi-kon/laravel-diff",
+  "authors"          : [
+    {
+      "name" : "Kovács Vince",
+      "email": "vincekovacs@hotmail.com"
+    }
+  ],
+  "require"          : {
+    "php": ">=5.5.9"
+  },
+  "autoload"         : {
+    "psr-4": {
+      "AyoubBajjou\\Diff\\": "src/AyoubBajjou/Diff"
+    }
+  },
+  "minimum-stability": "stable"
+}
