@@ -23,7 +23,7 @@ This package is for comparison strings and show changes.
 Via `composer`:
 
 ```bash
-composer require vi-kon/laravel-diff
+composer require ayoubbajjou/laravel-diff
 ```
 
 ---
