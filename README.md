@@ -1,4 +1,4 @@
-# Diff tool
+# Diff tool package
 
 This package is for comparison strings and show changes.
 
